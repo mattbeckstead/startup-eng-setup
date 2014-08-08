@@ -40,6 +40,7 @@ if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
 git clone https://github.com/mattbeckstead/startup-eng-dotfiles.git
+mv startup-eng-dotfiles/ dotfiles/
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
